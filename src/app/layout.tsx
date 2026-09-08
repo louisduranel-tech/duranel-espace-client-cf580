@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { RecoveryRedirect } from "@/components/RecoveryRedirect";
 
 export const metadata: Metadata = {
   title: "Espace Client DURANEL",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body>
+        <RecoveryRedirect />
         <div id="app">{children}</div>
       </body>
     </html>
